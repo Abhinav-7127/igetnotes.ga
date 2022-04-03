@@ -1,0 +1,314 @@
+#mynavbar{
+  z-index: 10000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-shadow: 0px 2px 14px 2px rgba(0, 0, 0, 0.7);
+  padding: 0.7rem;
+}
+
+#section2, #section3{
+  box-sizing: border-box;
+  padding-top: 7rem;
+}
+
+.nav-link-hr{
+  display: none;
+}
+
+#btn-mobile{
+  padding: 0.9rem;
+  display: none;
+  text-align: center;
+}
+
+#btn-pc{
+  margin-right: 20px;
+  animation: wobbling 1s linear infinite;
+}
+.typewriter{
+  max-width: 75vw;
+}
+.typewriter h1 {
+  background-color: rgb(255, 255, 255);
+  padding: 0.6rem;
+  color: rgb(0, 0, 0);
+  font-weight: 300;
+  font-family: verdana;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid white; /* The typwriter cursor */
+  white-space: nowrap;/*  Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+  typing 7s steps(30, end) infinite,
+  blink-caret .75s step-end infinite;
+}
+
+#ga{
+  color: orange;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 100;
+}
+
+/* The typing effect */
+@keyframes typing {
+  0%{ width: 0 }
+  75%{ width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange}
+}
+@keyframes wobbling {
+  0%{
+    transform: rotate(3deg);
+  }
+  25%{
+    transform: rotate(-3deg);
+  }
+  50%{
+    transform: rotate(3deg);
+  }
+  51%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(0deg);
+  }
+}
+
+#mynavbar-menu .nav-link{
+  color: rgb(53, 53, 53);
+}
+
+.section{
+  height: 100vh;
+}
+
+#section1{
+  background-color: #00DBDE;
+  background-image: linear-gradient(-60deg, #00DBDE 0%, #FC00FF 100%);
+  /* background-color: #d4418e;
+  background-image: linear-gradient(315deg, #d4418e 0%, #0652c5); */
+}
+
+#arrow{
+  animation-name: arrow;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+  animation-iteration-count: 2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes arrow {
+    0% { transform: translate3d(0, -1000%, 0);}
+    100% { transform: translate3d(0, 30%, 0);}
+}
+
+
+#arrowContainer{
+  padding: 0.2rem 0.3rem;
+  background-color: white;
+  border: 2px solid white;
+  border-radius: 2rem;
+  width: fit-content;
+  width: 5%;
+  overflow: visible;
+  white-space: nowrap;
+}
+
+#arrowContainer:hover{
+  padding: 0.2rem 0.3rem;
+  background-color: white;
+  border: 2px solid white;
+  border-radius: 2rem;
+  width: fit-content;
+}
+
+.clickAway{
+  color: black;
+  font-family: monospace;
+  text-decoration: none;
+  font-size: 1.7rem;
+  background-color: #FC00FF;
+  background-size: 150%;
+  background-image: linear-gradient(-60deg, #00DBDE 0%, #FC00FF 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 700;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.cta {
+  position: relative;
+  margin: auto;
+  padding: 19px 22px;
+  transition: all 0.2s ease;
+}
+
+.cta:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  border-radius: 28px;
+  background: rgba(255, 255, 255, 0.8);
+  width: 56px;
+  height: 56px;
+  transition: all 0.3s ease;
+}
+.cta span {
+  position: relative;
+  font-size: 1.2rem;
+  line-height: 18px;
+  font-weight: 600;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  vertical-align: middle;
+  color: black;
+}
+.cta:hover span{
+  text-decoration: none;
+  background-color: #FC00FF;
+  background-size: 150%;
+  background-image: linear-gradient(-60deg, #00DBDE 0%, #FC00FF 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.cta svg {
+  position: relative;
+  top: 0;
+  margin-left: 10px;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke: black;
+  stroke-width: 2;
+  transform: translateX(-5px);
+  transition: all 0.3s ease;
+}
+.cta:hover:before {
+  width: 100%;
+  background: white;
+}
+.cta:hover svg {
+  transform: translateX(0);
+  stroke: #00DBDE;
+}
+.cta:active {
+  transform: scale(0.96);
+}
+
+#section2{
+  background-color: red;
+}
+
+#section3{
+  background-color: chartreuse;
+}
+
+/* CSS */
+.button-29 {
+  align-items: center;
+  appearance: none;
+  background: -webkit-linear-gradient(to right, #E100FF, #7F00FF);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #E100FF, #7F00FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  border: 0;
+  border-radius: 6px;
+  box-shadow: rgba(45, 35, 66, .4) 0 2px 4px,rgba(45, 35, 66, .3) 0 7px 13px -3px,rgba(58, 65, 111, .5) 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: "JetBrains Mono",monospace;
+  padding: 0.6rem 0px;
+  /* height: 38px; */
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow .15s,transform .15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow,transform;
+  font-size: 18px;
+  background-size: 200% 200%;
+  animation: TransitioningBackground 2s ease infinite;
+}
+
+@keyframes TransitioningBackground {
+  0% {
+    background-position: 1% 0%;
+  }
+  50% {
+    background-position: 99% 100%;
+  }
+  100% {
+    background-position: 1% 0%;
+  }
+}
+
+
+.button-29:focus {
+  box-shadow: rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px;
+}
+
+.button-29:hover {
+  color: white;
+  box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, rgba(45, 35, 66, .3) 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+.button-29:active {
+  box-shadow: rgba(45, 35, 66, .3) 0 3px 7px inset;
+  transform: translateY(2px);
+}
+
+@media (min-width:992px){
+  #mynavbar-menu{
+    margin-right: 1rem !important;
+    font-size: 1.1rem;
+  }
+  .typewriter{
+    max-width: 28vw;
+  }
+}
+
+@media (max-width:991px) {
+  #mynavbar-menu .nav-link{
+    margin: auto !important;
+  }
+  .nav-link-hr{
+    display: block;
+  }
+  #btn-mobile{
+    display: block;
+    margin: 3px auto ;
+    margin-top: 15px;
+    width: 100%;
+  }
+  #btn-pc{
+    display: none;
+  }
+  .typewriter{
+    max-width: 70vw;
+  }
+}
+

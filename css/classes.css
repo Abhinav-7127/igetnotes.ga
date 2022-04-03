@@ -1,0 +1,47 @@
+#section1ForClasses{
+    padding-top: 5rem;
+    padding-bottom: 2rem;
+    height: fit-content;
+    min-height: 100vh;
+    background-color: #00DBDE;
+    background-image: linear-gradient(-60deg, #00DBDE 0%, #FC00FF 100%);
+}
+
+#myCardsContainer{
+    /* padding-top: 2rem; */
+    margin: auto;
+    flex-wrap: wrap;
+}
+.mycard{
+    width: 18rem;
+    margin: auto;
+    display: inline-block;
+    height: fit-content;
+}
+
+#class9:hover{
+    box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px 10px, rgba(45, 35, 66, .3) 0 -3px 0 inset;
+    transform: translateY(-4px);
+}
+
+#class9:active{
+    box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px 10px, rgba(45, 35, 66, .3) 0 -3px 0 inset;
+    transform: translateY(-4px);
+}
+
+#class9:focus{
+    box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px 10px, rgba(45, 35, 66, .3) 0 -3px 0 inset;
+    transform: translateY(-4px);
+}
+
+div.myCardImage{
+    margin: 0.5rem;
+    display: inline-block;
+    width: 17rem;
+    height: 17rem;
+    background-color: #00DBDE;
+    background-image: linear-gradient(-60deg, #00DBDE 0%, #FC00FF 100%);
+    opacity: 0.8;
+}
+
+
